@@ -28,7 +28,7 @@ export default function ContactForm() {
     };
 
     return (
-        <section id="contact" className="scroll-mt-24">
+        <section id="contact">
             <Container>
                 <SectionTitle
                     title="Vamos construir algo incrível"

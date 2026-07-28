@@ -4,13 +4,21 @@ import Container from "@/shared/components/layout/Container";
 
 export default function Hero() {
     return (
-        <section id="top" className="relative overflow-hidden pb-24 pt-10 lg:pt-20">
+        <section id="top" className="relative overflow-hidden py-12
+sm:py-16
+lg:py-24">
             <div className="absolute left-10 top-20 h-72 w-72 rounded-full bg-blue-600/20 blur-[140px]" />
             <div className="absolute right-10 top-32 h-72 w-72 rounded-full bg-violet-700/20 blur-[140px]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.15),transparent_40%)]" />
 
             <Container>
-                <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
+                <div className="
+                    grid
+                    gap-10
+                    items-center
+                    lg:grid-cols-[1.1fr_0.9fr]
+                    lg:gap-20
+                    ">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -20,7 +28,18 @@ export default function Hero() {
                             🚀 Soluções Digitais Completas
                         </span>
 
-                        <h1 className="mt-6 text-5xl font-black leading-tight sm:text-6xl lg:text-7xl">
+                        <h1
+                            className="
+        mt-6
+        text-4xl
+        font-black
+        leading-tight
+        tracking-tight
+        sm:text-5xl
+        md:text-6xl
+        lg:text-7xl
+    "
+                        >
                             Desenvolvimento, lojas virtuais e
                             <span className="block bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
                                 crescimento contínuo.

@@ -131,62 +131,30 @@ export default function Hero() {
                         transition={{ duration: 1 }}
                         className="relative"
                     >
-                        <div className="rounded-[2rem] border border-zinc-800 bg-gradient-to-br from-zinc-900 via-zinc-900 to-zinc-950 p-4 shadow-[0_0_80px_rgba(59,130,246,0.15)]">
-                            <div className="rounded-[1.5rem] border border-zinc-800 bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-700 p-6">
-                                <div className="rounded-[1.25rem] border border-white/10 bg-zinc-950/70 p-5 backdrop-blur">
+                        {/* Janela única de navegador, sem camadas de borda aninhadas */}
+                        <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 shadow-[0_0_80px_rgba(59,130,246,0.15)] backdrop-blur">
 
-                                    {/* Barra superior */}
-                                    <div className="flex items-center gap-2 border-b border-zinc-800 pb-4">
-                                        <div className="h-3 w-3 rounded-full bg-red-400" />
-                                        <div className="h-3 w-3 rounded-full bg-yellow-400" />
-                                        <div className="h-3 w-3 rounded-full bg-emerald-400" />
-                                    </div>
+                            {/* Barra superior */}
+                            <div className="flex items-center gap-2 border-b border-zinc-800 px-5 py-4">
+                                <div className="h-3 w-3 rounded-full bg-red-400" />
+                                <div className="h-3 w-3 rounded-full bg-yellow-400" />
+                                <div className="h-3 w-3 rounded-full bg-emerald-400" />
+                            </div>
 
-                                    {/* Navbar do site */}
-                                    <div className="mt-4 flex items-center justify-between">
-                                        <div className="h-3 w-20 rounded-full bg-white/90" />
+                            <div className="p-6">
+                                {/* Bloco de destaque com o gradiente da marca */}
+                                <div className="rounded-2xl bg-gradient-to-r from-blue-600 to-violet-700 p-6">
+                                    <div className="h-4 w-40 rounded-full bg-white/90" />
+                                    <div className="mt-4 h-3 w-full rounded-full bg-white/30" />
+                                    <div className="mt-3 h-3 w-4/5 rounded-full bg-white/20" />
+                                    <div className="mt-6 h-10 w-36 rounded-xl bg-white/90" />
+                                </div>
 
-                                        <div className="flex gap-3">
-                                            <div className="h-2 w-10 rounded-full bg-white/30" />
-                                            <div className="h-2 w-10 rounded-full bg-white/30" />
-                                            <div className="h-2 w-10 rounded-full bg-white/30" />
-                                        </div>
-                                    </div>
-
-                                    {/* Hero */}
-                                    <div className="mt-6 rounded-2xl bg-gradient-to-r from-blue-600 to-violet-700 p-6">
-
-                                        <div className="h-4 w-40 rounded-full bg-white/90" />
-
-                                        <div className="mt-4 h-3 w-full rounded-full bg-white/30" />
-
-                                        <div className="mt-3 h-3 w-4/5 rounded-full bg-white/20" />
-
-                                        <div className="mt-6 h-10 w-36 rounded-xl bg-white/90" />
-
-                                    </div>
-
-                                    {/* Cards */}
-
-                                    <div className="mt-6 grid grid-cols-2 gap-4">
-
-                                        {[1, 2, 3, 4].map(item => (
-
-                                            <div
-                                                key={item}
-                                                className="rounded-xl border border-zinc-800 bg-zinc-900 p-4"
-                                            >
-                                                <div className="h-3 w-16 rounded-full bg-blue-500" />
-
-                                                <div className="mt-4 h-2 rounded-full bg-zinc-700" />
-
-                                                <div className="mt-2 h-2 w-3/4 rounded-full bg-zinc-700" />
-                                            </div>
-
-                                        ))}
-
-                                    </div>
-
+                                {/* Linhas de conteúdo simples no lugar dos 4 cards */}
+                                <div className="mt-6 space-y-3">
+                                    <div className="h-2 w-full rounded-full bg-zinc-800" />
+                                    <div className="h-2 w-5/6 rounded-full bg-zinc-800" />
+                                    <div className="h-2 w-2/3 rounded-full bg-zinc-800" />
                                 </div>
                             </div>
                         </div>

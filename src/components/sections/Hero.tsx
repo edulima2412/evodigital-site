@@ -10,17 +10,21 @@ export default function Hero() {
 
         <section className="relative overflow-hidden">
 
+            <div className="absolute left-20 top-32 h-80 w-80 rounded-full bg-blue-600/20 blur-[120px]" />
+
+            <div className="absolute right-20 bottom-10 h-80 w-80 rounded-full bg-violet-700/20 blur-[120px]" />
+
             <Container>
 
                 <div className="grid items-center gap-20 lg:grid-cols-2">
 
                     <motion.div
 
-                        initial={{ opacity:0,y:40 }}
+                        initial={{ opacity: 0, y: 40 }}
 
-                        animate={{ opacity:1,y:0 }}
+                        animate={{ opacity: 1, y: 0 }}
 
-                        transition={{ duration:.8 }}
+                        transition={{ duration: .8 }}
 
                     >
 
@@ -68,11 +72,11 @@ export default function Hero() {
 
                     <motion.div
 
-                        initial={{ opacity:0,scale:.8 }}
+                        initial={{ opacity: 0, scale: .8 }}
 
-                        animate={{ opacity:1,scale:1 }}
+                        animate={{ opacity: 1, scale: 1 }}
 
-                        transition={{ duration:1 }}
+                        transition={{ duration: 1 }}
 
                         className="relative"
 

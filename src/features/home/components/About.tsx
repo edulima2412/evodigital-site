@@ -1,7 +1,7 @@
-import Container from "@/components/layout/Container";
-import SectionTitle from "@/components/ui/SectionTitle";
-import Button from "@/components/ui/Button";
-import Image from "@/components/ui/Image";
+import Container from "@/shared/components/layout/Container";
+import SectionTitle from "@/shared/components/ui/SectionTitle";
+import Button from "@/shared/components/ui/Button";
+import Image from "@/shared/components/ui/Image";
 
 export default function About() {
     return (

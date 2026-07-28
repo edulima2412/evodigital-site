@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { type ImgHTMLAttributes } from "react";
 
-import { resolveImage } from "@/utils/image";
+import { resolveImage } from "@/shared/utils/image";
 
 type Props = ImgHTMLAttributes<HTMLImageElement> & {
     fallbackSrc?: string;

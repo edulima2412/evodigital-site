@@ -1,8 +1,8 @@
-import Container from "@/components/layout/Container";
-import SectionTitle from "@/components/ui/SectionTitle";
-import Accordion from "@/components/ui/Accordion";
+import Container from "@/shared/components/layout/Container";
+import SectionTitle from "@/shared/components/ui/SectionTitle";
+import Accordion from "@/shared/components/ui/Accordion";
 
-import { faq } from "@/mocks/faq";
+import { faq } from "@/features/home/mocks/faq";
 
 export default function FAQ(){
 

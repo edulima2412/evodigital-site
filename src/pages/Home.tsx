@@ -1,14 +1,14 @@
-import Header from "@/components/layout/Header";
+import Header from "@/shared/components/layout/Header";
 
-import Hero from "@/components/sections/Hero";
-import Stats from "@/components/sections/Stats";
-import Services from "@/components/sections/Services";
-import Portfolio from "@/components/sections/Portfolio";
-import Why from "@/components/sections/Why";
-import About from "@/components/sections/About";
-import Process from "@/components/sections/Process";
-import FAQ from "@/components/sections/FAQ";
-import CTA from "@/components/sections/CTA";
+import Hero from "@/features/home/components/Hero";
+import Stats from "@/features/home/components/Stats";
+import Services from "@/features/home/components/Services";
+import Portfolio from "@/features/home/components/Portfolio";
+import Why from "@/features/home/components/Why";
+import About from "@/features/home/components/About";
+import Process from "@/features/home/components/Process";
+import FAQ from "@/features/home/components/FAQ";
+import CTA from "@/features/home/components/CTA";
 
 export default function Home() {
 

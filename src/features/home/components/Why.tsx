@@ -10,7 +10,7 @@ import {
 
 } from "react-icons/fi";
 
-import Container from "../layout/Container";
+import Container from "@/shared/components/layout/Container";
 
 const items = [
 

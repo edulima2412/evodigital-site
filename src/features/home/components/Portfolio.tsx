@@ -1,8 +1,8 @@
-import Container from "@/components/layout/Container";
-import SectionTitle from "@/components/ui/SectionTitle";
-import PortfolioCard from "@/components/ui/PortfolioCard";
+import Container from "@/shared/components/layout/Container";
+import SectionTitle from "@/shared/components/ui/SectionTitle";
+import PortfolioCard from "@/shared/components/ui/PortfolioCard";
 
-import { portfolio } from "@/mocks/portfolio";
+import { portfolio } from "@/features/home/mocks/portfolio";
 
 export default function Portfolio() {
 

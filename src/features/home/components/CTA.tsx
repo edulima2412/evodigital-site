@@ -1,5 +1,5 @@
-import Button from "@/components/ui/Button";
-import Container from "@/components/layout/Container";
+import Button from "@/shared/components/ui/Button";
+import Container from "@/shared/components/layout/Container";
 
 export default function CTA() {
 

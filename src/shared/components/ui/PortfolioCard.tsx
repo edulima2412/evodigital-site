@@ -1,5 +1,5 @@
-import { type PortfolioItem } from "@/mocks/portfolio";
-import Image from "@/components/ui/Image";
+import { type PortfolioItem } from "@/features/home/mocks/portfolio";
+import Image from "@/shared/components/ui/Image";
 
 type Props = {
 

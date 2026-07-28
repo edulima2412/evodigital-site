@@ -1,5 +1,5 @@
-import Container from "@/components/layout/Container";
-import SectionTitle from "@/components/ui/SectionTitle";
+import Container from "@/shared/components/layout/Container";
+import SectionTitle from "@/shared/components/ui/SectionTitle";
 
 const steps = [
     {

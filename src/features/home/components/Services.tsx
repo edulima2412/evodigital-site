@@ -1,10 +1,10 @@
-import Container from "../layout/Container";
+import Container from "@/shared/components/layout/Container";
 
-import SectionTitle from "../ui/SectionTitle";
+import SectionTitle from "@/shared/components/ui/SectionTitle";
 
-import ServiceCard from "../ui/ServiceCard";
+import ServiceCard from "@/shared/components/ui/ServiceCard";
 
-import { services } from "../../mocks/services";
+import { services } from "@/features/home/mocks/services";
 
 export default function Services() {
 

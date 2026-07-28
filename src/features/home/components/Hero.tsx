@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import Container from "../layout/Container";
+import Container from "@/shared/components/layout/Container";
 
-import Button from "../ui/Button";
+import Button from "@/shared/components/ui/Button";
 
 export default function Hero() {
 

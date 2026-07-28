@@ -35,8 +35,11 @@ export default function About() {
                             Trabalhamos com desenvolvimento de sites institucionais, interfaces modernas, arquitetura preparada para crescimento e soluções pensadas para performance, usabilidade e resultados.
                         </p>
 
-                        <div className="mt-10">
-                            <a href="#contact" className="rounded-xl bg-blue-600 px-6 py-3 font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-blue-500/50 inline-block center">
+                        <div className="mt-10 flex justify-center">
+                            <a
+                                href="#contact"
+                                className="inline-flex items-center rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/30 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-blue-500/50"
+                            >
                                 Vamos conversar
                             </a>
                         </div>

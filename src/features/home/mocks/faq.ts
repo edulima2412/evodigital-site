@@ -3,7 +3,7 @@ export const faq = [
     {
         question: "Quanto tempo leva para desenvolver um site?",
         answer:
-            "Em média entre 7 e 20 dias, dependendo do projeto."
+            "Em média entre 7 e 15 dias, dependendo do projeto."
     },
 
     {

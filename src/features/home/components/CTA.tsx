@@ -23,7 +23,12 @@ export default function CTA() {
 
                     </p>
 
-                    <Button className="mt-10 bg-white text-zinc-900 hover:bg-zinc-100">
+                    <Button className="mt-10 bg-white text-zinc-900 hover:bg-zinc-100"
+                        onClick={() => {
+                            document
+                                .getElementById("contact")
+                                ?.scrollIntoView({ behavior: "smooth" });
+                        }}>
 
                         Solicitar orçamento
 

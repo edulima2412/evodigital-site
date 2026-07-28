@@ -1,4 +1,6 @@
 import Container from "./Container";
+import Logo from "./Logo";
+import LegalPolicies from "@/features/home/components/LegalPolicies";
 
 export default function Footer() {
     return (
@@ -6,9 +8,7 @@ export default function Footer() {
             <Container>
                 <div className="flex flex-col gap-8 py-10 md:flex-row md:items-center md:justify-between">
                     <div>
-                        <div className="text-xl font-semibold">
-                            Evo<span className="text-blue-500">Digital</span>
-                        </div>
+                        <Logo />
                         <p className="mt-2 text-sm text-zinc-400">
                             Sites modernos, rápidos e preparados para crescimento.
                         </p>
@@ -25,8 +25,8 @@ export default function Footer() {
                 <div className="flex flex-col gap-3 border-t border-zinc-800 py-6 text-sm text-zinc-500 md:flex-row md:items-center md:justify-between">
                     <span>© 2026 EvoDigital. Todos os direitos reservados.</span>
                     <div className="flex gap-4">
-                        <a href="#" className="transition hover:text-zinc-300">Política de Privacidade</a>
-                        <a href="#" className="transition hover:text-zinc-300">Termos de Uso</a>
+                        <LegalPolicies type="privacy" />
+                        <LegalPolicies type="terms" />
                     </div>
                 </div>
             </Container>

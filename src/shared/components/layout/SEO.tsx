@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export default function SEO() {
     useEffect(() => {
-        const title = "EvoDigital | Desenvolvimento Web Premium";
+        const title = "EvoDigital";
         const description = "Landing page profissional da EvoDigital com foco em sites institucionais, performance e conversão.";
 
         document.title = title;

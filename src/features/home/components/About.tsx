@@ -1,6 +1,5 @@
 import Container from "@/shared/components/layout/Container";
 import SectionTitle from "@/shared/components/ui/SectionTitle";
-import Button from "@/shared/components/ui/Button";
 import Image from "@/shared/components/ui/Image";
 
 export default function About() {
@@ -8,22 +7,22 @@ export default function About() {
         <section id="about">
             <Container>
                 <SectionTitle
-                    title="EvoDigital: evolução digital para empresas"
+                    title="Evolução digital para empresas"
                     subtitle="Estratégia, tecnologia e presença online construída para crescer."
                 />
 
-                <div className="grid items-center gap-16 lg:grid-cols-2">
-                    <div className="overflow-hidden rounded-3xl border border-zinc-800">
+                <div className="grid items-stretch gap-16 lg:grid-cols-2">
+                    <div className="overflow-hidden rounded-3xl border border-zinc-800 h-full">
                         <Image
-                            src="/images/about/founder.jpg"
+                            src="/images/about/founder.png"
                             alt="Equipe da EvoDigital"
                             width={700}
                             height={700}
-                            className="w-full"
+                            className="w-full h-full object-cover"
                         />
                     </div>
 
-                    <div>
+                    <div className="flex flex-col justify-center">
                         <h3 className="text-4xl font-bold">
                             Transformamos negócios com soluções digitais inteligentes.
                         </h3>
@@ -37,9 +36,9 @@ export default function About() {
                         </p>
 
                         <div className="mt-10">
-                            <Button>
+                            <a href="#contact" className="rounded-xl bg-blue-600 px-6 py-3 font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-blue-500/50 inline-block center">
                                 Vamos conversar
-                            </Button>
+                            </a>
                         </div>
                     </div>
                 </div>

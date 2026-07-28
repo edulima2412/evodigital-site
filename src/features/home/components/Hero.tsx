@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
-import { FiArrowRight, FiPlay } from "react-icons/fi";
 
 import Container from "@/shared/components/layout/Container";
-import Button from "@/shared/components/ui/Button";
 
 export default function Hero() {
     return (
@@ -19,29 +17,31 @@ export default function Hero() {
                         transition={{ duration: 0.8 }}
                     >
                         <span className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400">
-                            🚀 Desenvolvimento Web Premium
+                            🚀 Soluções Digitais Completas
                         </span>
 
                         <h1 className="mt-6 text-5xl font-black leading-tight sm:text-6xl lg:text-7xl">
-                            Sites que conectam
+                            Desenvolvimento, lojas virtuais e
                             <span className="block bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
-                                marca, presença e resultados.
+                                crescimento contínuo.
                             </span>
                         </h1>
 
-                        <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl">
-                            Criamos experiências digitais modernas, rápidas e estratégicas para empresas que querem crescer com autoridade.
-                        </p>
-
-                        <div className="mt-10 flex flex-wrap gap-4">
-                            <Button className="inline-flex items-center gap-2">
-                                Solicitar orçamento
-                                <FiArrowRight />
-                            </Button>
-                            <a href="#portfolio" className="inline-flex items-center gap-2 rounded-2xl border border-zinc-800 bg-zinc-900/80 px-6 py-3 font-semibold text-zinc-200 transition hover:border-zinc-700 hover:bg-zinc-800">
-                                <FiPlay />
-                                Ver projetos
-                            </a>
+                        <div className="mt-8 space-y-2">
+                            <p className="max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl">
+                                Desenvolvemos sites institucionais, lojas virtuais e-commerce, com suporte contínuo em manutenção e melhorias.
+                            </p>
+                            <div className="mt-4 flex flex-wrap gap-3 text-sm text-zinc-300">
+                                <span className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-blue-300 border border-blue-500/20">
+                                    ✓ Desenvolvimento Web
+                                </span>
+                                <span className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-3 py-1 text-emerald-300 border border-emerald-500/20">
+                                    ✓ Lojas Virtuais
+                                </span>
+                                <span className="inline-flex items-center gap-2 rounded-full bg-violet-500/10 px-3 py-1 text-violet-300 border border-violet-500/20">
+                                    ✓ Manutenção & Melhorias
+                                </span>
+                            </div>
                         </div>
                     </motion.div>
 
@@ -59,11 +59,11 @@ export default function Hero() {
                                 <div className="rounded-[1.25rem] border border-white/10 bg-zinc-950/70 p-5 backdrop-blur">
                                     <div className="flex items-center justify-between">
                                         <div>
-                                            <p className="text-sm text-zinc-400">Performance</p>
-                                            <p className="text-xl font-semibold text-white">+180% presença digital</p>
+                                            <p className="text-sm text-zinc-400">Resultado Garantido</p>
+                                            <p className="text-xl font-semibold text-white">Sites que vendem</p>
                                         </div>
                                         <div className="rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-sm text-emerald-300">
-                                            em 90 dias
+                                            sempre
                                         </div>
                                     </div>
                                     <div className="mt-6 h-40 rounded-[1rem] border border-zinc-800 bg-[linear-gradient(120deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02))] p-4">

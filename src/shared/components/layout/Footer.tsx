@@ -18,6 +18,7 @@ export default function Footer() {
                         <a href="#services" className="transition hover:text-white">Serviços</a>
                         <a href="#portfolio" className="transition hover:text-white">Projetos</a>
                         <a href="#about" className="transition hover:text-white">Sobre</a>
+                        <a href="#pricing" className="transition hover:text-white">Preços</a>
                         <a href="#contact" className="transition hover:text-white">Contato</a>
                     </div>
                 </div>

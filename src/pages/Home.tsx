@@ -13,6 +13,7 @@ import Process from "@/features/home/components/Process";
 import FAQ from "@/features/home/components/FAQ";
 import CTA from "@/features/home/components/CTA";
 import ContactForm from "@/features/home/components/ContactForm";
+import Pricing from "@/features/home/components/Pricing";
 
 export default function Home() {
 
@@ -29,6 +30,8 @@ export default function Home() {
             <Services />
 
             <Portfolio />
+
+            <Pricing />
 
             <Why />
 

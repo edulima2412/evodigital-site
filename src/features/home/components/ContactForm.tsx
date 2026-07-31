@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { type SubmitHandler } from "react-hook-form";
 import { useForm } from "react-hook-form";
 import { FiArrowRight, FiMail, FiPhone } from "react-icons/fi";
@@ -18,8 +19,25 @@ export default function ContactForm() {
     const {
         register,
         handleSubmit,
+        setValue,
         formState: { errors, isSubmitting }
     } = useForm<FormValues>();
+
+    useEffect(() => {
+        function handlePrefill(event: Event) {
+            const customEvent = event as CustomEvent<{ message: string }>;
+            setValue("message", customEvent.detail.message, {
+                shouldValidate: true,
+                shouldDirty: true
+            });
+        }
+
+        window.addEventListener("prefill-contact-message", handlePrefill);
+
+        return () => {
+            window.removeEventListener("prefill-contact-message", handlePrefill);
+        };
+    }, [setValue]);
 
     const onSubmit: SubmitHandler<FormValues> = async (data) => {
         console.info("Contato enviado", data);

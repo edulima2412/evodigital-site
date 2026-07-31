@@ -62,7 +62,7 @@ const plans = [
 
 export default function Pricing() {
 
-    function handlePlanClick(message) {
+    function handlePlanClick(message: string) {
         // Envia a mensagem predefinida para o formulário de contato ouvir
         window.dispatchEvent(
             new CustomEvent("prefill-contact-message", {
